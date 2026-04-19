@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 360" role="img" aria-labelledby="title desc">
+  <title id="title">trendon.monster</title>
+  <desc id="desc">Анимированный логотип trendon.monster с плазменными волнами</desc>
+  <defs>
+    <linearGradient id="wordmark-bg" x1="10%" y1="10%" x2="90%" y2="90%">
+      <stop offset="0%" stop-color="#8de0cd"/>
+      <stop offset="48%" stop-color="#7fb1ff"/>
+      <stop offset="100%" stop-color="#f1bd72"/>
+    </linearGradient>
+    <linearGradient id="wave-a" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8de0cd" stop-opacity="0"/>
+      <stop offset="28%" stop-color="#8de0cd" stop-opacity="0.96"/>
+      <stop offset="62%" stop-color="#7fb1ff" stop-opacity="0.94"/>
+      <stop offset="100%" stop-color="#7fb1ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="wave-b" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f29dc0" stop-opacity="0"/>
+      <stop offset="36%" stop-color="#f1bd72" stop-opacity="0.96"/>
+      <stop offset="100%" stop-color="#d4de7a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="wave-c" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7fb1ff" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#7fb1ff" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#8de0cd" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="plasma-soften" x="-24%" y="-24%" width="148%" height="148%">
+      <feGaussianBlur stdDeviation="8" result="soft"/>
+      <feColorMatrix in="soft" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.22 0"/>
+    </filter>
+    <mask id="wordmark-mask" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="0" y="0" width="1040" height="360">
+      <rect width="1040" height="360" fill="#000"/>
+      <text x="520" y="190" fill="#fff" font-size="132" font-weight="800" letter-spacing="-4" text-anchor="middle" dominant-baseline="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif">trendon.monster</text>
+    </mask>
+  </defs>
+
+  <rect x="8" y="8" width="1024" height="344" rx="34" fill="#0b0e16"/>
+  <rect x="8" y="8" width="1024" height="344" rx="34" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
+
+  <g filter="url(#plasma-soften)" opacity="0.22">
+    <circle cx="220" cy="132" r="118" fill="#7fb1ff">
+      <animate attributeName="cx" values="220;250;220" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="132;114;132" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="846" cy="96" r="108" fill="#f1bd72" opacity="0.9">
+      <animate attributeName="cx" values="846;810;846" dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="96;118;96" dur="14s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g fill="none" stroke-linecap="round" filter="url(#plasma-soften)" opacity="0.96">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="-10 0;14 -6;-10 0" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.92;1;0.92" dur="8s" repeatCount="indefinite"/>
+      <path stroke="url(#wave-a)" stroke-width="22" d="M-110 106 C 62 52 176 208 352 136 S 656 42 838 120 S 1112 228 1194 148"/>
+      <path stroke="url(#wave-c)" stroke-width="14" d="M-90 186 C 88 136 228 270 416 210 S 692 94 902 180 S 1118 294 1200 214"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 6;-12 -10;0 6" dur="16s" repeatCount="indefinite"/>
+      <path stroke="url(#wave-b)" stroke-width="22" d="M-160 146 C 24 248 178 22 342 124 S 624 252 824 124 S 1028 24 1200 164"/>
+      <path stroke="url(#wave-b)" stroke-width="9" d="M-120 228 C 36 170 164 300 322 222 S 658 96 862 188 S 1086 306 1210 230"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;10 8;0 0" dur="14s" repeatCount="indefinite"/>
+      <path stroke="url(#wave-c)" stroke-width="14" d="M-140 88 C 30 194 198 8 382 88 S 666 202 872 108 S 1086 20 1206 116"/>
+    </g>
+  </g>
+
+  <g mask="url(#wordmark-mask)">
+    <rect width="1040" height="360" fill="url(#wordmark-bg)" opacity="0.18"/>
+    <g fill="none" stroke-linecap="round" filter="url(#plasma-soften)">
+      <path stroke="url(#wave-a)" stroke-width="22" d="M-110 106 C 62 52 176 208 352 136 S 656 42 838 120 S 1112 228 1194 148">
+        <animateTransform attributeName="transform" type="translate" values="-10 0;14 -6;-10 0" dur="12s" repeatCount="indefinite"/>
+      </path>
+      <path stroke="url(#wave-b)" stroke-width="22" d="M-160 146 C 24 248 178 22 342 124 S 624 252 824 124 S 1028 24 1200 164">
+        <animateTransform attributeName="transform" type="translate" values="0 6;-12 -10;0 6" dur="16s" repeatCount="indefinite"/>
+      </path>
+      <path stroke="url(#wave-c)" stroke-width="14" d="M-90 186 C 88 136 228 270 416 210 S 692 94 902 180 S 1118 294 1200 214">
+        <animateTransform attributeName="transform" type="translate" values="0 0;10 8;0 0" dur="14s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <text x="520" y="190" fill="#f7f1e8" fill-opacity="0.22" stroke="#f7f1e8" stroke-opacity="0.28" stroke-width="1" font-size="132" font-weight="800" letter-spacing="-4" text-anchor="middle" dominant-baseline="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif">trendon.monster</text>
+  <text x="520" y="190" fill="#f7f1e8" fill-opacity="0.94" font-size="132" font-weight="800" letter-spacing="-4" text-anchor="middle" dominant-baseline="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif">trendon.monster</text>
+</svg>
